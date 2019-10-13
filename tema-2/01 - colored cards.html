@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Colored cards</title>
+    <meta author="Andreea Onofrei" />
+    
+    <style>
+        body {
+            background: white;
+            margin: 0px;
+            padding: 0px;
+        }
+        .content {
+            background: lightgray;
+            position: fixed;
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+        .content-title{
+            text-transform: uppercase;
+            padding: 15px;
+        }
+        
+        .cards {
+            width: 100%;
+        }
+        
+        .card {
+            width: 32%;
+            display: inline-block;
+            border: 1px dashed gray;
+            margin: 5px;
+        }
+        .card-title{
+            width: 100%;
+            min-width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        
+        .pull-right {
+            float: right;
+        }
+        .card h3 {
+            font-size: 14px;
+            padding-left: 15px;
+            margin: 0px;
+        }
+        .card h5 {
+            font-size: 11px;
+            padding-left: 15px;
+            margin: 0px;
+        }
+        .card-body {
+            color: black;
+            padding: 15px;
+        }
+        
+        .red {
+            background-color: red;
+        }
+        
+        .cyan {
+            background-color: cyan;
+        }
+        
+        .green {
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="content">
+        <div class="content-title">
+            Colored cards
+        </div>
+        
+        <div class="cards">
+            
+            <div class="card">
+                <div class="card-title red">
+                    <span class="pull-right">
+                        <img src="https://www.shareicon.net/data/512x512/2015/12/25/692753_vertical_512x512.png" height="24" width="24" />
+                    </span>
+                    <h3>Title</h3>
+                    <h5>Subtitle</h5>
+                </div>
+                
+                <div class="card-body">
+                    Some text goes here in this box. Some text goes here in this box. Some text goes here in this box. Some text goes here in this box. Some text goes here in this box. 
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title cyan">
+                    <span class="pull-right">
+                        <img src="https://www.shareicon.net/data/512x512/2015/12/25/692753_vertical_512x512.png" height="24" width="24" />
+                    </span>
+                    <h3>Title</h3>
+                    <h5>Subtitle</h5>
+                </div>
+                
+                <div class="card-body">
+                    Some text goes here in this box. Some text goes here in this box. Some text goes here in this box. Some text goes here in this box. Some text goes here in this box. 
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title green">
+                    <span class="pull-right">
+                        <img src="https://www.shareicon.net/data/512x512/2015/12/25/692753_vertical_512x512.png" height="24" width="24" />
+                    </span>
+                    <h3>Title</h3>
+                    <h5>Subtitle</h5>
+                </div>
+                
+                <div class="card-body">
+                    Some text goes here in this box. Some text goes here in this box. Some text goes here in this box. Some text goes here in this box. Some text goes here in this box. 
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+
+</html>

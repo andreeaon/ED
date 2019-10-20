@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formm</title>
+    <style>
+        .container {
+            padding: 30px;
+            background: #39b7dd;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .box1 {
+            background: #16272e;
+            width: 450px;
+            box-sizing: border-box;
+            padding: 25px;
+            border-radius: 15px;
+            
+            
+
+        }
+
+        .box2 {
+            width: 450px;
+            box-sizing: border-box;
+            padding: 25px;
+            border-radius: 15px;
+            
+            
+          
+
+        }
+
+        .box1 input[type="text"] {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            color: #39b7dd;
+            border: 0;
+            border-bottom: 2px solid #39b7dd;
+            
+            background: transparent;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .box1 input[type="text"]:focus {
+            outline: 0;
+        }
+
+        .box2 input[type="text"] {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            color: #39b7dd;
+            border: 0;
+            border-bottom: 2px solid #39b7dd;
+            background: transparent;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .box2 input[type="text"]:focus {
+            outline: 0;
+        }
+
+        textarea:focus {
+            outline: 0;
+        }
+
+        .box1 textarea {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 0;
+            width: 100%;
+            border-bottom: 2px solid #39b7dd;
+            color: #39b7dd;
+            background: transparent;
+        }
+
+        .box2 textarea {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 0;
+            width: 100%;
+            border-bottom: 2px solid #39b7dd;
+            color: #39b7dd;
+            background: transparent;
+            
+        }
+        .upright {
+            background: #16272e;
+            margin-left: 15px;
+            margin-top: 38px;
+            padding: 10px;
+            border-radius: 15px;
+         
+        }
+        .upleft {
+            background: #16272e;
+            padding: 50px;
+            border-radius: 15px;
+           
+        }
+        .up {
+            background: #16272e;
+            border-radius: 10px;
+            width: 450px;
+            display: flex;
+            margin-left: 5px;
+            margin-top: -23px;
+           
+            
+        }
+        .bottom {
+    background: #16272e;
+    margin-top: -23px;
+    margin-left: 5px;
+    margin-bottom: -25px;
+    width: 450px;
+    border-radius: 15px;
+    height: 135px
+        }
+        input[type="submit"] {
+            background:#39b7dd;
+            padding: 5px;
+            width: 100%;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+    p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    padding-top: 5px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bolder;
+    color: #39b7dd;
+    }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="box1">
+
+            <div><input type="text" placeholder="Name"></div>
+            <div><input type="text" placeholder="Email Address"></div>
+            <div><input type="text" placeholder="Phone"></div>
+            <div><input type="text" placeholder="Subject"></div>
+            <div><textarea placeholder="Message" rows="6"></textarea></div>
+
+            <div><input type="submit" value="SEND"></div>
+        </div>
+
+        <div class="box2">
+            <div class="up">
+                <div class="upleft">
+                    <div><input type="text" placeholder="Name"></div>
+                    <div><input type="text" placeholder="Email Address"></div>
+                    <div><input type="text" placeholder="Phone"></div>
+                    <div><input type="text" placeholder="Subject"></div>
+                </div>
+                <div class="upright">
+                    <textarea placeholder="Message" rows="12"></textarea>
+                    <div><input type="submit" value="SEND"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="contact">
+                    <p>CONTACT US FORM</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

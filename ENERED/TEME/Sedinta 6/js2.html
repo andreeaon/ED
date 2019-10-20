@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <script>
+        
+        // problema 1.
+        // sa se calculeze suma primelor n numere naturale
+        // deci avem nevoie de un parametru constanta in care sa jucam "care" primele n numere
+        const maxN = 300000;
+        var rezultat = maxN * (maxN + 1) / 2;        
+        console.log('Suma primelor ' + maxN + ' de numere naturale este: ' + rezultat);
+
+        // problema 2
+        // Determinati numarul de numere dintr-un interval, 
+        // date fiind limita inferioara a intervalului si limita superioada a intervalului
+        const intervalMin = 15;
+        const intervalMax = 17;
+        rezultat = intervalMax - intervalMin - 1;
+        console.log('Determinarea numarului de numere din intervalul (' + intervalMin + ', ' + intervalMax + ') este: ' + rezultat);
+
+
+        // problema 3
+        // Calculati aria unui cerc de raza r
+        // aria = PI deinmultit cu patratul razei
+        const raza = 21;
+        const pi = 3.14;
+        console.log('Aria unui cerc cu raza de (' + raza + ' milimetri este de: ' + 
+            (pi * (raza * raza)) + ' milimetri');
+
+
+        // problema 4
+        // Cautati ce inseamna interschimbarea a 2 variabile (ne va folosi mai tarziu)
+        // inseamna ca unei variabile ii dai o valoare, dar la un moment dat in program, ii 
+        // atribui alta valoare, cum avem variabila rezultat de exemplu.
+
+        // problema 5
+        // Calculati media artimetica a 5 numere
+        const n1 = 12;
+        const n2 = 14;
+        const n3 = 16;
+        const n4 = 18;
+        const n5 = 20;
+        rezultat = (n1 + n2 + n3 + n4 + n5) / 5;
+        console.log('Media aritmetica a numerelor (' + n1 + ', ' + n2 + ', ' + n3 + ', ' + 
+            n4 + ', ' + n5 + ', ' + ') este ' + rezultat);
+
+        // problema 6
+        // Daca se pot fabrica 5 produce in 7 ore de lucru, cate ore sunt necesare pentru a fabrica 8 produse?
+        const p1 = 5;
+        const o1 = 7;
+        const p2 = 8;
+        var reg3simpla = (o1 * p2) / p1;
+        console.log('Daca se pot fabrica ' + p1 +' produce in ' + o1 + ' ore de lucru, cate ore sunt necesare pentru a fabrica ' + 
+            p2 + ' produse? ' + reg3simpla);
+
+
+        // problema 7
+        // Daca 10 muncitori sapa o groapa in 5 ore, in cat timp vor sapa groapa 30 de oameni?
+        const muncitori1 = 10;
+        const sapa1 = 5;
+        const muncitori2 = 30;
+        reg3simpla = 0;
+        console.log('Daca ' + p1 +' muncitori sapa o groapa in ' + o1 + ', in cat timp vor sapa groapa ' + 
+        muncitori2 + ' muncitori? ' + reg3simpla + ' ore');
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <script>
+        
+        function Calculeaza()
+        {
+            var n1 = parseInt(document.getElementById('n1').value);
+            var n2 = parseInt(document.getElementById('n2').value);
+
+
+
+            document.getElementById('rezultat').setAttribute('value', (n1 + n2) / 2);
+        }
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+    <div class="">
+        <label for="n1">Numarul 1:</label>
+        <input type="text" class="n1" id="n1" value="12">
+        <label for="n2">Numarul 2:</label>
+        <input type="text" class="n2" id="n2" value="12">
+        <label for="rezultat">Rezultat:</label>
+        <input type="text" id="rezultat" value="">
+        <button onclick="javascript:Calculeaza();" >Calculeaza</button>
+    </div>
+
+</html>

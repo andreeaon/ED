@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test circulatie</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .big-container {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        .quarter {
+            width: 50%;
+            height: 50%;
+            float: left;
+        }
+
+        .road {
+            top: 0px;
+            left: 0px;
+            width: 49px;
+            height: 49px;
+            background-color: gray;
+            position: relative;
+        }
+        .separator-br{
+            width: 24px;
+            height: 49px;
+            border-right: 1px dashed white;
+        }
+        .separator-bb{
+            height: 24px;
+            width: 49px;
+            border-bottom: 1px dashed white;
+        }
+        .pullright {
+            height: 149px;
+            width: 49px;
+            left: 150px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+        .pullright .separator-br{
+            height: 200px;
+        }
+
+        .pullbottom {
+            width: 149px;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+        
+        .pullbottom .separator-bb{
+            width: 200px;
+        }
+
+        .pullleft {
+            height: 149px;
+            left: 0px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+        .pullleft .separator-br{
+            height: 200px;
+        }
+
+        .tr .pullbottom {
+            left: 51px;
+        }
+
+        .pulltop {
+            width: 149px;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+        
+        .pulltop .separator-bb{
+            width: 200px;
+        }
+
+        .br .pulltop {
+            left: 51px;
+        }
+
+        .circle-container {
+            position: fixed;
+            left: calc(50% - 100px);
+            top: 110px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid white;
+            background-color: lightgreen;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .separator-benzi {
+            margin: 25px;
+            border: 2px dashed white;
+            border-radius: 50%;
+            width: 146px;
+            /* because of border 2px, width will be 150px summing 146px + borderleft + borderright */
+            height: 146px;
+        }
+
+        .circle-inner {
+            margin: 25px;
+            background-color: white;
+            border-radius: 50%;
+            width: 96px;
+            height: 96px;
+            /* because of border 2px, width will be 100px summing 96px + borderleft + borderright */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="big-container">
+
+        <div class="quarter tl">
+            <div class="road pullright">
+                <div class="separator-br"></div>
+            </div>
+            <div class="road pullbottom">
+                <div class="separator-bb"></div>
+            </div>
+        </div>
+
+        <div class="quarter tr">
+            <div class="road pullleft">
+                    <div class="separator-br"></div>
+            </div>
+            <div class="road pullbottom">
+                    <div class="separator-bb"></div>
+            </div>
+        </div>
+
+        <div class="quarter bl">
+            <div class="road pulltop">
+                    <div class="separator-bb"></div>
+            </div>
+            <div class="road pullright">
+                    <div class="separator-br"></div>
+            </div>
+        </div>
+
+        <div class="quarter br">
+            <div class="road pulltop">
+                    <div class="separator-bb"></div>
+            </div>
+            <div class="road pullleft">
+                    <div class="separator-br"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="circle-container">
+        <div class="separator-benzi">
+            <div class="circle-inner">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

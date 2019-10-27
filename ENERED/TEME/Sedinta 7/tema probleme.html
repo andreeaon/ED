@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <script>
+
+        // dat fiind un numar natural n sa se verifice daca acest numar citit de la stanga la dreapta este egal cu 
+        //numarul citit de la dreapta la stanga.
+        // de exemplu: 1345654321 //
+
+
+
+
+        // date fiind 2 numere n si m de maxim 7 cifre sa se uneasca aceste numere.
+        // exemplu: n = 1235; m = 6789; => 12356789 //
+
+        var n = 8938281
+        var m = 2389213
+        console.log(n + "" + m);
+
+        //  Sa se calculeze n la puterea m folosind un while si apoi folosind un for 
+        n = 2;
+        m = 16;
+        maxm = 1;
+        rezultat = n;
+        while (maxm < m) {
+            maxm++;
+            rezultat = rezultat * n;
+        }
+        console.log(n + " la puterea (cu while) " + m + " = " + rezultat)
+        
+        maxm = 1;
+        rezultat = n;
+        for (maxm = 1; maxm < m; maxm++) {
+            rezultat = rezultat * n;
+        }
+        console.log(n + " la puterea (cu FOR) " + m + " = " + rezultat)
+
+
+        // sa se genereze 100 de numere aleatoare de maxim 4 cifre si sa se afiseze doar cele pare//
+
+
+        var max100 = 1;
+        while (max100 <= 100) {
+            var x = Math.floor(Math.random() * 9998) + 1;
+            if (x % 2 == 0) {
+                //console.log("numarul " + x + "este par, este al " + max100 + "-lea")
+                max100 = max100 + 1
+            }
+
+        }
+
+
+
+//Să se scrie un program care să găsească toate pătratele perfecte mai mici ca n//
+
+var n = 100;
+for (i = 1; i < n; i++)
+{
+    if ( parseInt(Math.sqrt(i)) == Math.sqrt(i)) {
+        console.log( i + " este patrat perfect")
+    }
+}
+
+
+//Să se scrie un program care sa verifice dacă un număr este prim. (Cautati ce proprietati are un numar prim)//
+var n = 7
+if (n > 2) {
+    var amAflatDacaEPrim = false;
+
+    for (i = 2; i < n; i++) {
+        if (n % i == 0) {
+            console.log(n + " NU este numar prim");
+            amAflatDacaEPrim = true;
+            break;
+        }
+    }
+
+    if (amAflatDacaEPrim == false) {
+        console.log(n + " este numar prim");
+    }
+}
+else if (n == 2 | n == 1) {
+    console.log(n + " este numar prim");
+}
+else {
+    console.log(n + " NU este numar prim");
+}
+
+
+
+
+//Se sa genereze o secventa de 100 de numere de maxim 4 cifre. Sa se afle maximul si minimul din cadrul acestei secvente.//
+
+
+
+
+
+//Sa se genereze un numar aleator de maxim 12 cifre. Daca numarul de cifre este par sa se imparta in 2 numere acest numar in felul urmator:
+// n = 12345678 => n1 = 1234 si n2 = 5678;//
+
+
+
+    </script>
+</head>
+
+<body>
+    The content of the document......
+</body>
+
+</html>
